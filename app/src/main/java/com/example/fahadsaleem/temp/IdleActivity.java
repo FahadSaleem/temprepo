@@ -64,7 +64,7 @@ public class IdleActivity extends AppCompatActivity {
         mAuth.addAuthStateListener(mAuthListener);
         FirebaseUser currentUser = mAuth.getCurrentUser();
         if (currentUser != null) {
-            State state= new MainActivityState(IdleActivity.this);
+            State state= new SelectAvatarActivityState(IdleActivity.this);
             state.doAction();
         }
     }

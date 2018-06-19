@@ -47,7 +47,7 @@ public class StartUpActivity extends AppCompatActivity {
                                 }
                             });
                     // User is signed in
-                    State state= new MainActivityState(StartUpActivity.this);
+                    State state= new SelectAvatarActivityState(StartUpActivity.this);
                     state.doAction();
                     Log.d("Startup", "onAuthStateChanged:signed_in:" + user.getUid());
                 } else {
